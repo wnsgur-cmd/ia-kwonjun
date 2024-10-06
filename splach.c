@@ -1,8 +1,8 @@
 #include<stdio.h>
 
 int main() {
-    char name[100];
-    char time[100];
+    char name[5];
+    char time[50];
     printf("[현재 날짜를'yyyy-mm-dd' 형식으로 입력하세요]:");
     scanf_s("%s", &time, (int)sizeof(time));
 
