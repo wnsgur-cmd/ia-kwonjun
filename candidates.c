@@ -20,7 +20,7 @@ struct personal
 int main()
 {
     struct personal p[6];
-    for(int i=0; i<1;i++)
+    for(int i=0; i<6;i++)
     {
         printf("####################################\n");
         printf("    오디션 후보자 데이터 입력\n");
@@ -62,7 +62,7 @@ int main()
         fgets(p[i].intro, 100, stdin);
     }
 
-    for(int j=0;j<1;j++)
+    for(int j=0;j<6;j++)
     {   
 
         printf("####################################\n");
