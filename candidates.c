@@ -16,16 +16,17 @@ struct personal
     char intro[100];
 };
 
-
 int main()
 {
     struct personal p[6];
-    for(int i=0; i<6;i++)
+    int i = 0;
+
+    while(i < 6)
     {
         printf("####################################\n");
         printf("    오디션 후보자 데이터 입력\n");
         printf("####################################\n");
-        printf("%d 번 째 후보자의 정보를 입력합니다.\n",i+1);
+        printf("%d 번 째 후보자의 정보를 입력합니다.\n", i + 1);
 
         printf("성명: ");
         scanf("%4s", p[i].name);
@@ -60,6 +61,8 @@ int main()
         printf("소개: ");
         getchar();
         fgets(p[i].intro, 100, stdin);
+
+        i++;
     }
 
     for(int j=0;j<6;j++)
